@@ -8,25 +8,23 @@
 // Task:
 // Fix the bug so we can all go home early.
 
-class Dinglemouse{
-
-  constructor( firstName, lastName ){
-    this.firstName = firstName === '' ? null : firstName
-    this.lastName = lastName === '' ? null : lastName
+module.exports = class Dinglemouse {
+  constructor(firstName, lastName) {
+    this.firstName = firstName === '' ? null : firstName;
+    this.lastName = lastName === '' ? null : lastName;
   }
-  
-  getFullName(){
-    let fullname = this.firstName+" "+this.lastName
+
+  getFullName() {
+    let fullname = `${this.firstName} ${this.lastName}`;
 
     if (!this.firstName && !this.lastName) {
-      fullname = ''
+      fullname = '';
     } else if (!this.firstName) {
       fullname = this.lastName;
     } else if (!this.lastName) {
       fullname = this.firstName;
     }
 
-    return fullname
+    return fullname;
   }
-  
-}
+};
