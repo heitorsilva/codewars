@@ -2,6 +2,6 @@
 
 # The code does not execute properly. Try to figure out why.
 
-def multiply(a, b)
-  a * b
+def multiply(number1, number2)
+  number1 * number2
 end
