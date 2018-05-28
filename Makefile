@@ -15,3 +15,10 @@ test_python:
 
 test_ruby:
 	@cd ruby && rspec spec/ -f d
+
+test_rust:
+	@for dir in ./rust/*; do \
+		if [ -d $$dir ]; then \
+			cd $$dir && cargo test; \
+		fi; \
+	done
