@@ -1,2 +1,3 @@
 expects
+flake8
 mamba

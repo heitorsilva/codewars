@@ -1,8 +1,11 @@
 lint_js:
 	@npm run lint
 
+lint_python:
+	@flake8 python/
+
 lint_ruby:
-	@cd ruby && rubocop *.rb spec/*_spec.rb
+	@rubocop ruby/
 
 test_js:
 	@npm run test
