@@ -1,6 +1,6 @@
 # Codewars
 
-My solutions to [Codewars](https://www.codewars.com/) problems.
+My solutions to [Codewars](https://www.codewars.com/) challenges.
 
 ## Profile
 
