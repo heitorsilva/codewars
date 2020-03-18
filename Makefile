@@ -14,7 +14,7 @@ test_python:
 	@cd python && mamba spec/ -f documentation
 
 test_ruby:
-	@cd ruby && rspec spec/ -f d
+	@cd ruby && rspec **/*_spec.rb -f d
 
 test_rust:
 	@for dir in ./rust/*; do \

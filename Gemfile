@@ -9,4 +9,3 @@ group :development, :test do
   gem 'rspec'
   gem 'rubocop'
 end
-
